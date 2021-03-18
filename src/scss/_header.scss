@@ -1,0 +1,25 @@
+.header {
+  grid-column: 2 /8;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  // margin: 10vh 0;
+  // width: 60vw;
+  background-color: $color-secondary-dark;
+  // background-size: cover;
+}
+
+.heading-container {
+  grid-column: 2 / -1;
+  grid-row: 5/ 7;
+}
+.header-background {
+  grid-column: 3 / -3;
+  grid-row: 2/ -2;
+  background-image: url(./../img/calluna-drink-1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  //
+}
