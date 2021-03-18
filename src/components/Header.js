@@ -7,7 +7,7 @@ class Header extends React.Component {
         <div className="header-background"></div>
         <div className="heading-container">
           <h1 className="heading-1">Thomas Dupa</h1>
-          <h2 className="heading-2">Junior Front End Developer</h2>
+          <h2 className="heading-2">Learning github currently</h2>
         </div>
       </div>
     );
