@@ -1,9 +1,11 @@
 //Color variables
 
-$color-primary: #f107b3;
+$color-pink: #e98a98;
+$color-primary: #a9d0fd;
 $color-primary-dark: #c18d33;
 $color-primary-light: #ecc582;
 
+$color-blue-light: #a9d0fd;
 // $color-grey-light: #f107b3;
 $color-grey-light: #e7e4e3;
 
@@ -29,7 +31,7 @@ html {
 }
 body {
   font-size: 3.5rem;
-  background-color: $color-secondary-dark;
+  background-color: $color-grey-light;
   font-family: $font-teritary;
 }
 

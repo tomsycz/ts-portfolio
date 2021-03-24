@@ -7,18 +7,22 @@
 
   // margin: 10vh 0;
   // width: 60vw;
-  background-color: $color-secondary-dark;
+  background-color: $color-grey-light;
   // background-size: cover;
+  padding-bottom: 15rem;
 }
 
 .heading-container {
   grid-column: 2 / -1;
-  grid-row: 5/ 7;
+  grid-row: 11/ 13;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 .header-background {
   grid-column: 3 / -3;
   grid-row: 2/ -2;
-  background-image: url(./../img/calluna-drink-1.jpg);
+  background-image: url(./../img/profile.png);
   background-size: cover;
   background-position: bottom;
   //
