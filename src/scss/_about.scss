@@ -1,4 +1,6 @@
 .about {
-  background-color: $color-secondary;
-  grid-column: 3 /7;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-column: 1 / 2;
+  justify-self: end;
 }

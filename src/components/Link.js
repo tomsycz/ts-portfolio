@@ -5,12 +5,17 @@ const Link = ({ className, href, children }) => {
     if (event.metaKey || event.ctrlKey) {
       return;
     }
-
     event.preventDefault();
-    window.history.pushState({}, "", href);
 
+    window.history.pushState({}, "", href);
     const navEvent = new PopStateEvent("popstate");
+
     window.dispatchEvent(navEvent);
+    event.target.parentNode.childNodes.forEach(element => {
+      element.className = "nav__link";
+    });
+    
+    event.target.className = "nav__link selected";
   };
   return (
     <a onClick={onClick} className={className} href={href}>
@@ -20,3 +25,7 @@ const Link = ({ className, href, children }) => {
 };
 
 export default Link;
+
+// className={`nav__link ${
+//             link.path === window.location.pathname ? "selected" : ""
+//           }`}

@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
@@ -7,30 +8,51 @@ import Navi from "./Navi";
 import Projects from "./Projects";
 import Route from "./Route";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        <Navi />
-        <Route path="/">
-          <Header />
-          <About />
-          <Projects />
-          <Contact />
-          <Footer />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </div>
-    );
-  }
-}
+const navLinks = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Projects",
+    path: "/projects",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+  
+];
+
+const App = () => {
+  return (
+    <div className="container">
+      {/* {window.addEventListener("popstate", setActiveMenuBtn)} */}
+      {document.documentElement.style.setProperty(
+        "--nav-size",
+        navLinks.length
+      )}
+
+      <Navi navLinks={navLinks} />
+      <Route path="/">
+        <Header />
+      </Route>
+      <Route path="/projects">
+        <Projects />
+      </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Route path="/contact">
+        <Contact />
+      </Route>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

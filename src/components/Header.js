@@ -4,11 +4,14 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <div className="header-background"></div>
         <div className="heading-container">
-          <h2 className="heading-2">Hi, my name is</h2>
-          <h1 className="heading-1">Thomas Syczyk</h1>
-          <h2 className="heading-2">Junior Front End Developer</h2>
+          <h2 className="heading-2">Hi! I'm</h2>
+          <h1 className="heading-1">Tom</h1>
+          <h2 className="heading-2">
+            <span>I am a</span><br/>
+            <span>Front-End</span><br/>
+            <span>Developer</span>
+            </h2>
         </div>
       </div>
     );

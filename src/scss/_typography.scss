@@ -1,14 +1,15 @@
 .heading-1 {
-  font-weight: 200;
   letter-spacing: 2rem;
-
-  color: $color-blue-light;
+  font-family: $font-primary;
+  color: $col-white;
+  line-height: 90%;
+  text-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.55);
 }
 .heading-2 {
-  color: $color-pink;
-  font-style: italic;
+  color: $col-white-87;
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
-  font-weight: 100;
+  font-weight: 300;
+  text-shadow: -.3rem .3rem .3rem rgba(0, 0, 0, 0.55);
 }

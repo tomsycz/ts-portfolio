@@ -13,9 +13,36 @@ $color-secondary: #262b2b;
 $color-secondary-light: #5f787b;
 $color-secondary-dark: #0d1011;
 
-$font-primary: "Josefin sans", sans-serif; // weights: 100 300 400 500 600 700
-$font-secondary: "Jura", sans-serif; //weights: 300 400 500 600 700
-$font-teritary: "Noto Sans", sans-serif;
+//Dark theme:
+$col-base: #121212;
+$col-0dp: rgba(255, 255, 255, 0);
+$col-1dp: rgba(255, 255, 255, 0.05);
+$col-2dp: rgba(255, 255, 255, 0.07);
+$col-3dp: rgba(255, 255, 255, 0.08);
+$col-4dp: rgba(255, 255, 255, 0.09);
+$col-6dp: rgba(255, 255, 255, 0.11);
+$col-8dp: rgba(255, 255, 255, 0.12);
+$col-12dp: rgba(255, 255, 255, 0.14);
+$col-16dp: rgba(255, 255, 255, 0.15);
+$col-24dp: rgba(255, 255, 255, 0.16);
+
+// Whites
+$col-white: rgba(255, 255, 255, 1); //
+$col-white-87: rgba(255, 255, 255, 0.87); // Hight emphasis
+$col-white-60: rgba(255, 255, 255, 0.6); // Low emphasis
+$col-white-38: rgba(255, 255, 255, 0.38); // Disabled
+
+//fonts
+$font-primary: "Bebas Neue", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+// Other variables
+$navSize: 5;
+:root {
+  nav-size: 1;
+}
 
 *,
 *::before,
@@ -31,13 +58,17 @@ html {
 }
 body {
   font-size: 3.5rem;
-  background-color: $color-grey-light;
-  font-family: $font-teritary;
+  background-color: $col-base;
+  font-family: $font-secondary;
 }
 
 // Page Layout
+
+// home Layout
 .container {
   display: grid;
-  grid-template-columns: 12rem 1fr repeat(4, min-content) 1fr;
-  grid-template-rows: 100vh repeat(4, min-content);
+  // grid-template-columns: 12rem 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
 }

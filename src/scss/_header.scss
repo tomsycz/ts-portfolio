@@ -1,29 +1,38 @@
 .header {
-  grid-column: 2 /8;
-
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-
-  // margin: 10vh 0;
-  // width: 60vw;
-  background-color: $color-grey-light;
-  // background-size: cover;
-  padding-bottom: 15rem;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-column: 1 / 2;
+  justify-self: end;
+  transition: 10s;
+}
+.header:hover {
 }
 
 .heading-container {
-  grid-column: 2 / -1;
-  grid-row: 11/ 13;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-.header-background {
-  grid-column: 3 / -3;
-  grid-row: 2/ -2;
-  background-image: url(./../img/profile.png);
+  grid-row: 2 / 3;
+  justify-self: center;
+  height: 48rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-image: url(../img/profilepinkbluepng.png);
   background-size: cover;
-  background-position: bottom;
-  //
+  background-color: $col-1dp;
+  box-shadow: -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
+.heading-container:hover {
+  background-position: right center;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.heading-container > * {
+  transform: translateX(-3rem);
+  transition: all 1s;
+}
+
+.heading-container:hover > * {
+  transform: translateX(6rem);
+  // text-align: end;
+}
+
+.heading-container:hover > .heading-1 {
+  // transform: translateX(5rem);
 }
