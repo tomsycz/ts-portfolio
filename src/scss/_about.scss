@@ -1,6 +1,43 @@
 .about {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  grid-column: 1 / 2;
-  justify-self: end;
+  grid-column: 3 / 4;
+  justify-self: start;
+}
+
+.about-container {
+  grid-row: 2 / 3;
+  justify-self: center;
+  height: 48rem;
+  width: 19.7rem;
+  background-image: url(../img/profilepinkbluepng.png);
+  background-size: cover;
+  background-color: $col-1dp;
+  // box-shadow: -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: 1s;
+  background-position: right center;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.aboutSec {
+  display: grid;
+  width: 50rem;
+  grid-template-rows: 1fr min-content 1fr;
+
+}
+
+.text-container {
+  height: 48rem;
+  grid-row: 2 / 3;
+  padding: 3rem 2rem;
+  background-color: $col-1dp;
+
+}
+
+p {
+  font-size: 2rem;
+  color: $col-white-87;
+  font-family: $font-secondary;
+  font-weight: 200;
+
 }

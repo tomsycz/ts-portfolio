@@ -5,6 +5,11 @@
   justify-self: end;
   transition: 10s;
 }
+
+
+
+
+
 .header:hover {
 }
 
@@ -20,8 +25,7 @@
   transition: 1s;
 }
 .heading-container:hover {
-  background-position: right center;
-  border-radius: 0 0.5rem 0.5rem 0;
+  
 }
 .heading-container > * {
   transform: translateX(-3rem);

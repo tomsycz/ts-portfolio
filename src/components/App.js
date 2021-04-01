@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import About from "./About";
+import AboutSec from "./About-2";
 import Contact from "./Contact";
 import Navi from "./Navi";
 import Projects from "./Projects";
@@ -45,6 +46,7 @@ const App = () => {
         <Projects />
       </Route>
       <Route path="/about">
+
         <About />
       </Route>
       <Route path="/contact">
