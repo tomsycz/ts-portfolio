@@ -15,6 +15,7 @@ $color-secondary-dark: #0d1011;
 
 //Dark theme:
 $col-base: #121212;
+$col-base-60: rgba(18, 18, 18, 0.6);
 $col-0dp: rgba(255, 255, 255, 0);
 $col-1dp: rgba(255, 255, 255, 0.05);
 $col-2dp: rgba(255, 255, 255, 0.07);
@@ -25,6 +26,7 @@ $col-8dp: rgba(255, 255, 255, 0.12);
 $col-12dp: rgba(255, 255, 255, 0.14);
 $col-16dp: rgba(255, 255, 255, 0.15);
 $col-24dp: rgba(255, 255, 255, 0.16);
+$col-32dp: rgba(255, 255, 255, 0.24);
 
 // Whites
 $col-white: rgba(255, 255, 255, 1); //
@@ -58,7 +60,12 @@ html {
 }
 body {
   font-size: 3.5rem;
-  background-color: $col-base;
+  // background-color: $col-base;
+  background-image: linear-gradient(
+      rgba(18, 18, 18, 0.6),
+      rgba(18, 18, 18, 0.6)
+    ),
+    url(../img/hero-black.jpg);
   font-family: $font-secondary;
 }
 
