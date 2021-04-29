@@ -25,7 +25,3 @@ const Link = ({ className, href, children }) => {
 };
 
 export default Link;
-
-// className={`nav__link ${
-//             link.path === window.location.pathname ? "selected" : ""
-//           }`}

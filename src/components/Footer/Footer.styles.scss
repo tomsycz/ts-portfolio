@@ -1,0 +1,9 @@
+@import "../../App.styles.scss";
+
+.footer {
+  background-color: $color-secondary-dark;
+  align-self: end;
+  grid-row: -1 / -2;
+  grid-column: 1 / -1;
+  padding-bottom: 1rem;
+}
