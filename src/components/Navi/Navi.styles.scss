@@ -6,8 +6,11 @@
   align-self: end;
 }
 .nav {
+  &__link,
   &__link:link,
   &__link:visited {
+    cursor: pointer;
+
     color: $col-white-60;
   }
   &__link:hover {
@@ -27,7 +30,7 @@
     font-weight: 300;
     font-size: 2rem;
     padding: 5px 10px;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: 0.1s;
     justify-self: center;
   }
@@ -38,6 +41,10 @@
     text-decoration: none;
     list-style: none;
     align-items: center;
+  }
+  .sun-moon-icon:hover {
+    transform: rotate(90deg);
+    
   }
 }
 

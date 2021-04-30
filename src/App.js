@@ -8,7 +8,7 @@ import Navi from "./components/Navi/Navi.component";
 import Projects from "./components/Projects/Projects.component";
 import Route from "./components/Route";
 
-import './App.styles.scss'
+import "./App.styles.scss";
 
 const navLinks = [
   {
@@ -27,6 +27,10 @@ const navLinks = [
     label: "Contact",
     path: "/contact",
   },
+  // {
+  //   label: "☀/☾",
+  //   path: "/contact",
+  // },
 ];
 
 const App = () => {
@@ -34,7 +38,7 @@ const App = () => {
     <div className="container">
       {document.documentElement.style.setProperty(
         "--nav-size",
-        navLinks.length
+        navLinks.length +1
       )}
 
       <Navi navLinks={navLinks} />

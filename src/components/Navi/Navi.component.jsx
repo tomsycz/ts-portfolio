@@ -21,7 +21,10 @@ const Navi = ({ navLinks }) => {
   return (
     <div className="navi">
       {/* <h2 className="heading-2">Navi</h2> */}
-      <ul className="nav__list">{renderedNavi}</ul>
+      <ul className="nav__list">
+        {renderedNavi}
+        <div className="nav__link sun-moon-icon">☾</div>
+      </ul>
     </div>
   );
 };
