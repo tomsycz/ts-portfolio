@@ -12,12 +12,10 @@
   &:hover {
     // transform: scale(1.05);
     background-color: var(--col-8dp);
-    filter: brightness(1.1);
   }
   margin-bottom: 1rem;
   .project-image {
-    background-image: var(--card-gradient), url("./../../img/Natours.png");
-
+    background-position: center;
     background-size: cover;
     height: 24rem;
     display: flex;
@@ -46,7 +44,7 @@
     letter-spacing: 0.2rem;
     .project-description {
       color: var(--col-font-60);
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       height: 6rem;
       overflow: scroll;
       padding: 0 1rem;
@@ -54,7 +52,7 @@
     }
 
     .project-tech {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       .tech-list {
         list-style: none;
         display: flex;
@@ -118,8 +116,11 @@
   }
 }
 .category {
-  margin: 1.5rem 1rem;
+  margin: 0.5rem 1rem 1.5rem 1rem;
   font-size: 1.7rem;
   color: var(--col-font-87);
   font-family: var(--font-primary);
+  border-top: solid 1px var(--col-font-38);
+  padding-top: 1rem;
+  letter-spacing: 0.2rem;
 }

@@ -6,10 +6,7 @@
   justify-content: center;
   gap: 4rem 3rem;
   grid-template-rows: min-content min-content min-content;
-  grid-template-columns: min-content min-content min-content;
-  width: 100vw;
-  padding: 0 10%;
-  overflow: scroll;
+  grid-template-columns: repeat(3, min-content);
 }
 .heading-component {
   color: var(--col-font-87);
