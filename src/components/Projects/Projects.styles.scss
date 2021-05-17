@@ -1,6 +1,19 @@
-@import "../../App.styles.scss";
-
 .projects {
-  grid-column: 2 / 3;
-  background-color: $col-2dp;
+  grid-column: 1 / -1;
+
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  gap: 4rem 3rem;
+  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: min-content min-content min-content;
+  width: 100vw;
+  padding: 0 10%;
+  overflow: scroll;
+}
+.heading-component {
+  color: var(--col-font-87);
+  font-family: var(--font-primary);
+  letter-spacing: 0.5rem;
+  grid-column: 1 / -1;
 }

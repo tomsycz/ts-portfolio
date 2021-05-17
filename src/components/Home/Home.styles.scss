@@ -1,0 +1,61 @@
+.home {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-column: 1 / -1;
+  justify-self: center;
+  z-index: 1;
+}
+
+.content-container {
+  position: relative;
+  grid-row: 2 / 3;
+  justify-self: center;
+  height: auto;
+  max-width: 60rem;
+  border-radius: 0.7rem;
+  background-color: var(--col-1dp);
+  box-shadow: -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin: 0 2rem;
+  z-index: 1;
+}
+.heading-container {
+  transform: translateX(-4rem);
+  transition: all 1s;
+}
+
+.heading-container:hover {
+  transform: translateX(-2rem);
+}
+
+.profile-picture {
+  height: 12rem;
+  justify-self: end;
+  transform: translate(40%, 50%);
+  -webkit-filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.7));
+  z-index: 10;
+}
+.content-container > .text {
+  color: var(--col-font-60);
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  letter-spacing: 1px;
+  font-family: var(--font-secondary);
+  font-weight: 200;
+}
+.content-container > .text-1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.content-container > .text-2 {
+  margin-bottom: 3rem;
+}
+.react-icon {
+  color: var(--react-icon-col);
+  font-size: 26rem;
+  position: absolute;
+  top: 0rem;
+  right: 10rem;
+  transform: rotate(-5deg);
+}

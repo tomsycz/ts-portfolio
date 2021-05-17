@@ -1,0 +1,125 @@
+.project {
+  height: 60rem;
+  width: 30rem;
+  font-size: 1.2rem;
+  color: var(--col-font);
+  background-color: var(--col-3dp);
+  // box-shadow: ;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 0.2s;
+  box-shadow: -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  &:hover {
+    // transform: scale(1.05);
+    background-color: var(--col-8dp);
+    filter: brightness(1.1);
+  }
+  margin-bottom: 1rem;
+  .project-image {
+    background-image: var(--card-gradient), url("./../../img/Natours.png");
+
+    background-size: cover;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    .project-name {
+      font-size: 3.5rem;
+      color: var(--col-font-87);
+      font-family: var(--font-primary);
+
+      // color: var(--color-primary);
+      width: 100%;
+      // text-align: center;
+      // text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 0.2rem;
+      padding: 0rem 1rem;
+      text-shadow: -0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.15);
+    }
+  }
+  .project-details {
+    margin-top: 1rem;
+    padding: 1rem 1.2rem;
+    letter-spacing: 0.2rem;
+    .project-description {
+      color: var(--col-font-60);
+      margin-bottom: 4rem;
+      height: 6rem;
+      overflow: scroll;
+      padding: 0 1rem;
+      text-indent: 1rem;
+    }
+
+    .project-tech {
+      margin-bottom: 4rem;
+      .tech-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        .tech-logo {
+          .logo {
+            height: auto;
+            width: 2.8rem;
+            fill: var(--col-font-60);
+          }
+        }
+      }
+    }
+    .project-apis {
+      margin-bottom: 3.5rem;
+      .apis-list {
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // justify-items: center;
+        list-style: none;
+        color: var(--col-font-60);
+
+        .api {
+          margin-left: 1rem;
+        }
+      }
+    }
+    .project-links {
+      margin: 0rem 1rem;
+      font-family: var(--font-primary);
+
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+
+      .project-link {
+        .project-git {
+          margin-right: 0.5rem;
+          transform: translateY(1px);
+        }
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: var(--col-font-87);
+        }
+        &:hover {
+          color: var(--color-primary);
+        }
+        &:active {
+          // color: var(--col-font);
+        }
+      }
+      .git-link {
+      }
+      .web-link {
+      }
+    }
+  }
+}
+.category {
+  margin: 1.5rem 1rem;
+  font-size: 1.7rem;
+  color: var(--col-font-87);
+  font-family: var(--font-primary);
+}

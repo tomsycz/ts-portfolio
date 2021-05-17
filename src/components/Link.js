@@ -1,7 +1,7 @@
 import React from "react";
 
 const Link = ({ className, href, children }) => {
-  const onClick = event => {
+  const handleClick = event => {
     if (event.metaKey || event.ctrlKey) {
       return;
     }
@@ -14,11 +14,11 @@ const Link = ({ className, href, children }) => {
     event.target.parentNode.childNodes.forEach(element => {
       element.className = "nav__link";
     });
-    
+
     event.target.className = "nav__link selected";
   };
   return (
-    <a onClick={onClick} className={className} href={href}>
+    <a onClick={handleClick} className={className} href={href}>
       {children}
     </a>
   );

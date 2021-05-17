@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ModeProvider from "./providers/mode.provider";
+
 import App from "./App";
-// import "./scss/index.scss";
 
-//DOM modifications
-// const menuLinks = document.querySelectorAll("nav__link");
-
-// menuLinks.addEventListener(
-//   "click",
-//   () => (menuLinks.classList = "nav__link selected")
-// );
-
-ReactDOM.render(<App />, document.querySelector("#root"));
- 
+ReactDOM.render(
+  <ModeProvider>
+    <App />
+  </ModeProvider>,
+  document.querySelector("#root")
+);

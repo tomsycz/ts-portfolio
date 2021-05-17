@@ -1,29 +1,31 @@
-import React from "react";
 import Link from "../Link";
 
+import ColorSwitch from "./../ColorSwitch/ColorSwitch.component";
 import "./Navi.styles.scss";
 
-const Navi = ({ navLinks }) => {
-  const renderedNavi = navLinks.map(link => {
+const renderNaviItems = links => {
+  return links.map(link => {
+    const { id, path, label } = link;
     return (
       <Link
-        id="home-btn"
-        href={link.path}
+        key={id}
+        href={path}
         className={`nav__link ${
-          link.path === window.location.pathname ? "selected" : ""
+          path === window.location.pathname ? "selected" : ""
         }`}
       >
-        {link.label}
+        {label}
       </Link>
     );
   });
+};
 
+const Navi = ({ navLinks }) => {
   return (
     <div className="navi">
-      {/* <h2 className="heading-2">Navi</h2> */}
       <ul className="nav__list">
-        {renderedNavi}
-        <div className="nav__link sun-moon-icon">☾</div>
+        {renderNaviItems(navLinks)}
+        <ColorSwitch />
       </ul>
     </div>
   );

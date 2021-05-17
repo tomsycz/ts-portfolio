@@ -1,50 +1,86 @@
 //Color variables
 
-$color-pink: #e98a98;
-$color-primary: #a9d0fd;
-$color-primary-dark: #c18d33;
-$color-primary-light: #ecc582;
+:root {
+  --color-primary: #a9d0fd;
+  --color-blue-light: #7dcbff;
 
-$color-blue-light: #a9d0fd;
-// $color-grey-light: #f107b3;
-$color-grey-light: #e7e4e3;
+  --footer-bg: rgba(18, 18, 18, 0.8);
 
-$color-secondary: #262b2b;
-$color-secondary-light: #5f787b;
-$color-secondary-dark: #0d1011;
+  // --react-icon-col: rgba(245, 0, 0, 0.959);
+  --react-icon-col: rgba(0, 0, 0, 0.25);
 
-//Dark theme:
-$col-base: #121212;
-$col-base-60: rgba(18, 18, 18, 0.6);
-$col-0dp: rgba(255, 255, 255, 0);
-$col-1dp: rgba(255, 255, 255, 0.05);
-$col-2dp: rgba(255, 255, 255, 0.07);
-$col-3dp: rgba(255, 255, 255, 0.08);
-$col-4dp: rgba(255, 255, 255, 0.09);
-$col-6dp: rgba(255, 255, 255, 0.11);
-$col-8dp: rgba(255, 255, 255, 0.12);
-$col-12dp: rgba(255, 255, 255, 0.14);
-$col-16dp: rgba(255, 255, 255, 0.15);
-$col-24dp: rgba(255, 255, 255, 0.16);
-$col-32dp: rgba(255, 255, 255, 0.24);
+  //Dark theme:
+  --col-base: #121212;
+  --col-base-60: rgba(18, 18, 18, 0.6);
+  --col-0dp: rgba(255, 255, 255, 0);
+  --col-1dp: rgba(255, 255, 255, 0.05);
+  --col-2dp: rgba(255, 255, 255, 0.07);
+  --col-3dp: rgba(255, 255, 255, 0.08);
+  --col-4dp: rgba(255, 255, 255, 0.09);
+  --col-6dp: rgba(255, 255, 255, 0.11);
+  --col-8dp: rgba(255, 255, 255, 0.12);
+  --col-12dp: rgba(255, 255, 255, 0.14);
+  --col-16dp: rgba(255, 255, 255, 0.15);
+  --col-24dp: rgba(255, 255, 255, 0.16);
+  --col-32dp: rgba(255, 255, 255, 0.24);
 
-// Whites
-$col-white: rgba(255, 255, 255, 1); //
-$col-white-87: rgba(255, 255, 255, 0.87); // Hight emphasis
-$col-white-60: rgba(255, 255, 255, 0.6); // Low emphasis
-$col-white-38: rgba(255, 255, 255, 0.38); // Disabled
+  // Whites
+  --col-font: rgba(255, 255, 255, 1); //
+  --col-font-87: rgba(255, 255, 255, 0.87); // Hight emphasis
+  --col-font-60: rgba(255, 255, 255, 0.6); // Low emphasis
 
-//fonts
-$font-primary: "Bebas Neue", sans-serif;
-$font-secondary: "Montserrat", sans-serif;
-// font-family: 'Bebas Neue', cursive;
-// font-family: 'Montserrat', sans-serif;
+  --col-font-38: rgba(255, 255, 255, 0.38); // Disabled
+
+  // Gradients
+  --card-gradient: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.377)
+  );
+
+  // Shadows
+  --heading-1-shdw: -1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  --heading-2-shdw: -0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.55);
+
+  //fonts
+  --font-primary: "Bebas Neue", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+  // font-family: 'Bebas Neue', cursive;
+  // font-family: 'Montserrat', sans-serif;
+
+  --nav-size: 3;
+}
+
+// Light theme variables
+:root[data-theme="light"] {
+  //Colors
+  --color-primary: #e98a98;
+
+  --footer-bg: rgba(255, 255, 255, 0.6);
+
+  --col-font: rgb(46, 46, 46);
+  --col-font-87: rgba(41, 41, 41, 0.87); // Hight emphasis
+  --col-font-60: rgba(41, 41, 41, 0.6); // Low emphasis
+  --col-font-38: rgba(41, 41, 41, 0.38);
+
+  --col-1dp: rgba(255, 255, 255, 0.3);
+  --col-3dp: rgba(255, 255, 255, 0.37);
+  --col-8dp: rgba(255, 255, 255, 0.549);
+
+  --react-icon-col: rgba(255, 255, 255, 0.446);
+
+  --card-gradient: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  //Shadows
+  --heading-1-shdw: -0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  --heading-2-shdw: -0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
+}
 
 // Other variables
-$navSize: 6;
-:root {
-  nav-size: 5;
-}
 
 *,
 *::before,
@@ -60,13 +96,15 @@ html {
 }
 body {
   font-size: 3.5rem;
+  font-family: var(--font-secondary);
+
   // background-color: $col-base;
-  background-image: linear-gradient(
-      rgba(18, 18, 18, 0.6),
-      rgba(18, 18, 18, 0.6)
-    ),
-    url(./img/hero-black.jpg);
-  font-family: $font-secondary;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  list-style: none;
 }
 
 // Page Layout
@@ -75,23 +113,35 @@ body {
 .container {
   display: grid;
   // grid-template-columns: 12rem 1fr;
-  grid-template-rows: 15vh 70vh 15vh;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: 10vh min-content 15vh;
+  grid-template-columns: 1fr;
   justify-items: center;
+
+  font-family: var(--font-secondary);
 }
 
 .heading-1 {
   letter-spacing: 2rem;
-  font-family: $font-primary;
-  color: $col-white;
+  font-family: var(--font-primary);
+  padding: 1rem 0;
+  color: var(--color-primary);
   line-height: 90%;
-  text-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.55);
+  text-shadow: var(--heading-1-shdw);
 }
 .heading-2 {
-  color: $col-white-87;
+  color: var(--col-font-87);
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
-  text-shadow: -.3rem .3rem .3rem rgba(0, 0, 0, 0.55);
+  text-shadow: var(--heading-2-shdw);
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }

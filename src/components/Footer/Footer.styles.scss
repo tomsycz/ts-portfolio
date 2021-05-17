@@ -1,9 +1,33 @@
-@import "../../App.styles.scss";
-
 .footer {
-  background-color: $color-secondary-dark;
-  align-self: end;
-  grid-row: -1 / -2;
+  // background-color: var(--color-secondary-dark);
+  // align-self: end;
+  // grid-row: -1 / -2;
   grid-column: 1 / -1;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  z-index: 1;
+  align-self: flex-end;
+}
+
+.social-icon {
+}
+.social-icon:link,
+.social-icon:visited {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.social-link:link,
+.social-link:visited {
+  color: var(--col-font-38);
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.social-link:hover {
+  color: var(--col-font-60);
+}
+
+.social-link:active {
+  color: var(--col-font-87);
 }

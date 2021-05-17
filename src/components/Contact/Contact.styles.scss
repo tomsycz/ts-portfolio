@@ -1,9 +1,4 @@
-@import "../../App.styles.scss";
-
-
 .contact {
-  background-color: $col-2dp;
-  grid-column: 2 / 3;
-  
-
+  z-index: 1;
+  background-color: var(--col-2dp);
 }
