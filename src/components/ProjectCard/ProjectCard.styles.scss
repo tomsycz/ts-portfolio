@@ -1,5 +1,5 @@
 .project {
-  height: 60rem;
+  height: min-content;
   width: 30rem;
   font-size: 1.2rem;
   color: var(--col-font);
@@ -39,6 +39,7 @@
     }
   }
   .project-details {
+    position: relative;
     margin-top: 1rem;
     padding: 1rem 1.2rem;
     letter-spacing: 0.2rem;
@@ -120,7 +121,7 @@
   font-size: 1.7rem;
   color: var(--col-font-87);
   font-family: var(--font-primary);
-  border-top: solid 1px var(--col-font-38);
+  border-top: solid 1px var(--col-font-10);
   padding-top: 1rem;
   letter-spacing: 0.2rem;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 
-import natoursPhoto from "./../../img/Natours.png";
 import {
   SiReact,
   SiRedux,
@@ -29,7 +28,15 @@ const iconsMap = {
   SiGithub,
 };
 
-const ProjectCard = ({ name, description, techStack, apis, links, image }) => {
+const ProjectCard = ({
+  name,
+  description,
+  techStack,
+  apis,
+  repoLink,
+  webLink,
+  image,
+}) => {
   console.log(image);
   return (
     <div className="project">
@@ -41,38 +48,57 @@ const ProjectCard = ({ name, description, techStack, apis, links, image }) => {
       </div>
       <div className="project-details">
         <div className="project-description">{description}</div>
-        <div className="project-tech">
-          <h3 className="category">Tech Stack</h3>
-          <ul className="tech-list">
-            {techStack.map(tech => {
-              const SiIcon = iconsMap["Si" + tech];
-              return (
-                <li key={tech} className="tech-logo">
-                  <SiIcon key={tech} className="logo" alt="HTML" />
+        {techStack ? (
+          <div className="project-tech">
+            <h3 className="category">Tech Stack</h3>
+            <ul className="tech-list">
+              {techStack.map(tech => {
+                const SiIcon = iconsMap["Si" + tech];
+                return (
+                  <li key={tech} className="tech-logo">
+                    <SiIcon key={tech} className="logo" alt="HTML" />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ) : null}
+        {apis ? (
+          <div className="project-apis">
+            <h3 className="category">APIs</h3>
+            <ul className="apis-list">
+              {apis.map(api => (
+                <li key={api} className="api">
+                  {api}
                 </li>
-              );
-            })}
-          </ul>
-        </div>
+              ))}
+            </ul>
+          </div>
+        ) : null}
 
-        <div className="project-apis">
-          <h3 className="category">APIs</h3>
-          <ul className="apis-list">
-            {apis.map(api => (
-              <li key={api} className="api">
-                {api}
-              </li>
-            ))}
-          </ul>
-        </div>
         <div className="project-links">
-          <a className="project-link git-link" href={links[0]}>
-            <SiGithub className="project-git" />
-            repository
-          </a>
-          <a className="project-link web-link" href={links[1]}>
-            Website
-          </a>
+          {repoLink ? (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="project-link git-link"
+              href={repoLink}
+            >
+              <SiGithub className="project-git" />
+              repository
+            </a>
+          ) : null}
+
+          {webLink ? (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="project-link web-link"
+              href={webLink}
+            >
+              Website
+            </a>
+          ) : null}
         </div>
       </div>
     </div>

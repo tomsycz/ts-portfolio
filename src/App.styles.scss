@@ -30,6 +30,7 @@
   --col-font-60: rgba(255, 255, 255, 0.6); // Low emphasis
 
   --col-font-38: rgba(255, 255, 255, 0.38); // Disabled
+  --col-font-10: rgba(255, 255, 255, 0.1); // Disabled
 
   // Gradients
   --card-gradient: linear-gradient(
@@ -62,12 +63,13 @@
   --col-font-87: rgba(41, 41, 41, 0.87); // Hight emphasis
   --col-font-60: rgba(41, 41, 41, 0.6); // Low emphasis
   --col-font-38: rgba(41, 41, 41, 0.38);
+  --col-font-10: rgba(41, 41, 41, 0.1);
 
   --col-1dp: rgba(255, 255, 255, 0.3);
   --col-3dp: rgba(255, 255, 255, 0.37);
   --col-8dp: rgba(255, 255, 255, 0.549);
 
-  --react-icon-col: rgba(255, 255, 255, 0.446);
+  --react-icon-col: rgba(255, 255, 255, 0.3);
 
   --card-gradient: linear-gradient(
     to top,

@@ -1,4 +1,14 @@
-const PROJECTS_DATA = [
+export const HOME_DATA = {
+  hi: "Hi! I'm",
+  name: "Thomas",
+  role: "I am a Front-End Developer",
+  paragraphs: [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores molestiae debitis dolores, alias voluptates totam sunt minusquod quos nisi, consectetur adipisci maiores molestiae debitis placeat eius deleniti facilis quod quos nisi, consectetur adipisci dolores, alias voluptates totam sunt minus at molestias quam.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis quod inventore alias, enim nostrum. Dolorum modi ea accusamus ipsa assumenda nam, illum eos maxime quae repudiandae ad, atque repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis quod inventore alias, enim nostrum. Dolorum modi ea accusamus ipsa assumenda nam, illum eos maxime quae repudiandae ad, atque repellendus!",
+  ],
+};
+
+export const PROJECTS_DATA = [
   {
     id: 1,
     image: "https://i.ibb.co/1rm0nYk/Screenshot-2021-05-17-at-14-52-28.png",
@@ -7,7 +17,8 @@ const PROJECTS_DATA = [
       "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
     techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
     apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: ["https;//gitrepo.link", "https://website.link"],
+    repoLink: "https;//gitrepo.link",
+    webLink: "https://website.link",
   },
   {
     id: 2,
@@ -17,10 +28,9 @@ const PROJECTS_DATA = [
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
     techStack: ["React", "Redux", "Sass", "Javascript"],
     apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: [
-      "https://github.com/tomsycz/crwn-clothing-app",
-      "https://fa-store-app.herokuapp.com/",
-    ],
+
+    repoLink: "https://github.com/tomsycz/crwn-clothing-app",
+    webLink: "https://fa-store-app.herokuapp.com/",
   },
   {
     id: 3,
@@ -31,6 +41,8 @@ const PROJECTS_DATA = [
     techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
     apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
     links: ["https;//gitrepo.link", "https://website.link"],
+    repoLink: "/",
+    webLink: "/",
   },
   {
     id: 4,
@@ -38,9 +50,9 @@ const PROJECTS_DATA = [
     name: "Crwn",
     description:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
-    techStack: ["Css3", "Sass", "React", "Redux"],
     apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: ["/", "https://fa-store-app.herokuapp.com/"],
+    repoLink: "/",
+    webLink: "/",
   },
   {
     id: 5,
@@ -49,8 +61,8 @@ const PROJECTS_DATA = [
     description:
       "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
     techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: ["https;//gitrepo.link", "https://website.link"],
+    repoLink: "/",
+    webLink: "/",
   },
   {
     id: 6,
@@ -58,9 +70,8 @@ const PROJECTS_DATA = [
     name: "Crwn",
     description:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
-    techStack: ["Css3", "Sass", "Mongodb", "Javascript"],
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: ["/", "/"],
+
+    repoLink: "",
+    webLink: "",
   },
 ];
-export default PROJECTS_DATA;
