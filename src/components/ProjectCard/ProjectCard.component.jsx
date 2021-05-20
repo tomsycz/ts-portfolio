@@ -37,7 +37,6 @@ const ProjectCard = ({
   webLink,
   image,
 }) => {
-  console.log(image);
   return (
     <div className="project">
       <div

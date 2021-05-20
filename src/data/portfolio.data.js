@@ -1,24 +1,57 @@
+export const NAV_LINKS = [
+  {
+    label: "Home",
+    path: "/",
+    id: 1,
+  },
+
+  {
+    label: "Projects",
+    path: "/projects",
+    id: 3,
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+    id: 4,
+  },
+];
+
 export const HOME_DATA = {
   hi: "Hi! I'm",
   name: "Thomas",
   role: "I am a Front-End Developer",
+  roles: [
+    "I am a Front-End Developer",
+    "I am a rock climber",
+    "I am a morning runner",
+  ],
   paragraphs: [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores molestiae debitis dolores, alias voluptates totam sunt minusquod quos nisi, consectetur adipisci maiores molestiae debitis placeat eius deleniti facilis quod quos nisi, consectetur adipisci dolores, alias voluptates totam sunt minus at molestias quam.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis quod inventore alias, enim nostrum. Dolorum modi ea accusamus ipsa assumenda nam, illum eos maxime quae repudiandae ad, atque repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis quod inventore alias, enim nostrum. Dolorum modi ea accusamus ipsa assumenda nam, illum eos maxime quae repudiandae ad, atque repellendus!",
+    "My name is Thomas Syczyk I am a self-thought front-end developer. Solving complex problems with clean and easy to maintain code. Utilising React ecosystem. Passionate about building user friendly and mobile responsive applications. I believe that hard work pays off, and in my case it always did.",
+    "Currently learning Typescript and working remotely from Nottingham, UK.",
   ],
 };
 
 export const PROJECTS_DATA = [
+  {
+    id: 0,
+    image: "https://i.ibb.co/RCJ5nK3/Screenshot-2021-05-19-at-14-39-56.png",
+    name: "Portfolio",
+    description:
+      "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
+    techStack: ["React", "Sass", "Html5"],
+    repoLink: "https://github.com/tomsycz/ts-portfolio",
+  },
   {
     id: 1,
     image: "https://i.ibb.co/1rm0nYk/Screenshot-2021-05-17-at-14-52-28.png",
     name: "Calluna",
     description:
       "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
-    techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    repoLink: "https;//gitrepo.link",
-    webLink: "https://website.link",
+    techStack: ["Javascript", "Sass", "Html5", "Css3"],
+    apis: ["Google Maps"],
+    repoLink: "https://github.com/tomsycz/calluna",
+    webLink: "https://calluna-nottingham.com",
   },
   {
     id: 2,
@@ -38,31 +71,32 @@ export const PROJECTS_DATA = [
     name: "Natours",
     description:
       "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
-    techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
+    techStack: ["NodeDotJs", "Mongodb", "Sass", "Javascript"],
     apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
-    links: ["https;//gitrepo.link", "https://website.link"],
-    repoLink: "/",
-    webLink: "/",
+    repoLink: "https://github.com/tomsycz/natours",
+    webLink: "https://natours-syczyk.herokuapp.com/",
   },
   {
     id: 4,
-    image: "https://i.ibb.co/Hxf1136/Screenshot-2021-05-17-at-14-59-11.png",
-    name: "Crwn",
+    image: "https://i.ibb.co/cc1tk0B/Screenshot-2021-05-19-at-15-56-43.png",
+    name: "Face Detecting App",
     description:
       " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
+    techStack: ["NodeDotJs", "React", "Sass", "Javascript"],
+
+    apis: ["Clarif", "Google", "Unsplashed", "JsonPlaceholder"],
     repoLink: "/",
     webLink: "/",
   },
   {
     id: 5,
-    image: "https://i.ibb.co/1rm0nYk/Screenshot-2021-05-17-at-14-52-28.png",
-    name: "Calluna",
+    image: "https://i.ibb.co/Jr1yVb4/Screenshot-2021-05-20-at-11-35-55.png",
+    name: "Natours (landing)",
     description:
       "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
-    techStack: ["Html5", "Sass", "React", "NodeDotJs", "Redux"],
-    repoLink: "/",
-    webLink: "/",
+    techStack: ["Html5", "Sass", "Css3"],
+    repoLink: "https://github.com/tomsycz/Natours-landing",
+    webLink: "https://tomsycz.github.io/Natours-landing/",
   },
   {
     id: 6,

@@ -9,6 +9,7 @@ import Navi from "./components/Navi/Navi.component";
 import Projects from "./components/Projects/Projects.component";
 import Route from "./components/Route";
 
+import { NAV_LINKS } from "./data/portfolio.data";
 import {
   particlesConfig,
   lightParticlesConfig,
@@ -17,43 +18,19 @@ import { ModeContext } from "./providers/mode.provider";
 
 import "./App.styles.scss";
 
-const navLinks = [
-  {
-    label: "Home",
-    path: "/",
-    id: 1,
-  },
-  {
-    label: "About",
-    path: "/about",
-    id: 2,
-  },
-  {
-    label: "Projects",
-    path: "/projects",
-    id: 3,
-  },
-  {
-    label: "Contact",
-    path: "/contact",
-    id: 4,
-  },
-];
-
 const App = () => {
   const { isDark } = useContext(ModeContext);
   const mode = isDark ? "dark" : "light";
   document.documentElement.setAttribute("data-theme", mode);
-  console.log(particlesConfig.background.color.value);
 
   return (
     <div className="container">
       {document.documentElement.style.setProperty(
         "--nav-size",
-        navLinks.length + 1
+        NAV_LINKS.length + 1
       )}
 
-      <Navi navLinks={navLinks} />
+      <Navi navLinks={NAV_LINKS} />
       <Route path="/">
         <Home />
       </Route>

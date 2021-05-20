@@ -1,4 +1,5 @@
 import React from "react";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 import "./Footer.styles.scss";
 
@@ -11,7 +12,7 @@ const Footer = () => {
         rel="noreferrer"
         href="https://github.com/tomsycz"
       >
-        <i className="fab fa-github social-icon social-icon__footer"></i>
+        <SiGithub className=" social-icon social-icon__footer" />
       </a>
       <a
         className="social-link"
@@ -19,7 +20,7 @@ const Footer = () => {
         rel="noreferrer"
         href="https://www.linkedin.com/in/tomasz-syczyk-424103159/"
       >
-        <i className="fab fa-linkedin social-icon social-icon__footer"></i>
+        <SiLinkedin className="social-icon social-icon__footer" />
       </a>
     </div>
   );
