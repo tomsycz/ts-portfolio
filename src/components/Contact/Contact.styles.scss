@@ -1,4 +1,14 @@
 .contact {
-  z-index: 1;
-  background-color: var(--col-2dp);
+  z-index: 5;
+  margin-top: 4.5rem;
+
+  .pdf-box {
+    box-shadow: var(--cv-shadow);
+    border-radius: 5px;
+    overflow: hidden;
+    filter: var(--cv-filter);
+    .pdf-page {
+      // overflow: hidden;
+    }
+  }
 }

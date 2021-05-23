@@ -11,6 +11,7 @@ import {
   SiHtml5,
   SiGraphql,
   SiGithub,
+  SiPostgresql,
 } from "react-icons/si";
 
 import "./ProjectCard.styles.scss";
@@ -26,6 +27,7 @@ const iconsMap = {
   SiHtml5,
   SiGraphql,
   SiGithub,
+  SiPostgresql,
 };
 
 const ProjectCard = ({
@@ -64,7 +66,7 @@ const ProjectCard = ({
         ) : null}
         {apis ? (
           <div className="project-apis">
-            <h3 className="category">APIs</h3>
+            <h3 className="category">API Integrations</h3>
             <ul className="apis-list">
               {apis.map(api => (
                 <li key={api} className="api">

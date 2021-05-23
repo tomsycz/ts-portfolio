@@ -11,8 +11,8 @@ export const NAV_LINKS = [
     id: 3,
   },
   {
-    label: "Contact",
-    path: "/contact",
+    label: "RESUME / contact",
+    path: "/cv",
     id: 4,
   },
 ];
@@ -27,40 +27,20 @@ export const HOME_DATA = {
     "I am a morning runner",
   ],
   paragraphs: [
-    "My name is Thomas Syczyk I am a self-thought front-end developer. Solving complex problems with clean and easy to maintain code. Utilising React ecosystem. Passionate about building user friendly and mobile responsive applications. I believe that hard work pays off, and in my case it always did.",
+    "My name is Thomas Syczyk I am a self-thought front-end developer. Solving complex problems with clean and easy to maintain code. Utilising React Ecosystem. Passionate about building user friendly and mobile responsive applications. I strongly believe that hard work pays off, and in my case it always did.",
     "Currently learning Typescript and working remotely from Nottingham, UK.",
   ],
 };
 
 export const PROJECTS_DATA = [
   {
-    id: 0,
-    image: "https://i.ibb.co/RCJ5nK3/Screenshot-2021-05-19-at-14-39-56.png",
-    name: "Portfolio",
-    description:
-      "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
-    techStack: ["React", "Sass", "Html5"],
-    repoLink: "https://github.com/tomsycz/ts-portfolio",
-  },
-  {
-    id: 1,
-    image: "https://i.ibb.co/1rm0nYk/Screenshot-2021-05-17-at-14-52-28.png",
-    name: "Calluna",
-    description:
-      "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
-    techStack: ["Javascript", "Sass", "Html5", "Css3"],
-    apis: ["Google Maps"],
-    repoLink: "https://github.com/tomsycz/calluna",
-    webLink: "https://calluna-nottingham.com",
-  },
-  {
     id: 2,
     image: "https://i.ibb.co/Hxf1136/Screenshot-2021-05-17-at-14-59-11.png",
     name: "Crwn",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
+      "Fashoin e-commerce app built with React Ecosystem, including: Redux, Sagas, Styled Comoponents and more...",
     techStack: ["React", "Redux", "Sass", "Javascript"],
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
+    apis: ["Stripe", "Google", "Firebase"],
 
     repoLink: "https://github.com/tomsycz/crwn-clothing-app",
     webLink: "https://fa-store-app.herokuapp.com/",
@@ -70,42 +50,53 @@ export const PROJECTS_DATA = [
     image: "https://i.ibb.co/mTb8k2F/Screenshot-2021-05-17-at-20-19-34.png",
     name: "Natours",
     description:
-      "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
+      "Adventure holiday provider website, built with NodeJS, Express, MongoDB, Pug Templates and more...",
     techStack: ["NodeDotJs", "Mongodb", "Sass", "Javascript"],
-    apis: ["Stripe", "Google", "Unsplashed", "JsonPlaceholder"],
+    apis: ["Stripe", "MongoDB", "Mapbox"],
     repoLink: "https://github.com/tomsycz/natours",
     webLink: "https://natours-syczyk.herokuapp.com/",
   },
   {
+    id: 1,
+    image: "https://i.ibb.co/1rm0nYk/Screenshot-2021-05-17-at-14-52-28.png",
+    name: "Calluna",
+    description:
+      "Cocktail bar fully responsive website, built using JavaScript, advanced CSS/SASS techniques and more...",
+    techStack: ["Javascript", "Sass", "Html5", "Css3"],
+    apis: ["Google Maps"],
+    repoLink: "https://github.com/tomsycz/calluna",
+    webLink: "https://calluna-nottingham.com",
+  },
+  {
     id: 4,
     image: "https://i.ibb.co/cc1tk0B/Screenshot-2021-05-19-at-15-56-43.png",
-    name: "Face Detecting App",
+    name: "SmartBrain",
     description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
-    techStack: ["NodeDotJs", "React", "Sass", "Javascript"],
+      "Face detection app, utilizing Clarifai API, built wiht React, NodeJS, PostgreSQL and more...",
+    techStack: ["NodeDotJs", "React", "Postgresql", "Javascript"],
 
-    apis: ["Clarif", "Google", "Unsplashed", "JsonPlaceholder"],
+    apis: ["Clarifai"],
     repoLink: "/",
     webLink: "/",
   },
+  {
+    id: 0,
+    image: "https://i.ibb.co/RCJ5nK3/Screenshot-2021-05-19-at-14-39-56.png",
+    name: "Portfolio",
+    description:
+      "Personal portfolio you are currently visiting. Simple and clean SPA, built with React and Context API for global state management.",
+    techStack: ["React", "Sass", "Html5"],
+    repoLink: "https://github.com/tomsycz/ts-portfolio",
+  },
+
   {
     id: 5,
     image: "https://i.ibb.co/Jr1yVb4/Screenshot-2021-05-20-at-11-35-55.png",
     name: "Natours (landing)",
     description:
-      "Esubim erog veritatis temporibus, quibusdam eveniet recusandae lorem ipsume suisdfasdf asdfaf",
+      "Travel agency landing page, mobile responsive, designed with Sass",
     techStack: ["Html5", "Sass", "Css3"],
     repoLink: "https://github.com/tomsycz/Natours-landing",
     webLink: "https://tomsycz.github.io/Natours-landing/",
-  },
-  {
-    id: 6,
-    image: "https://i.ibb.co/Hxf1136/Screenshot-2021-05-17-at-14-59-11.png",
-    name: "Crwn",
-    description:
-      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas labore veritatis temporibus, quibusdam eveniet recusandae odit",
-
-    repoLink: "",
-    webLink: "",
   },
 ];

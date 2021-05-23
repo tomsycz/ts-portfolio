@@ -8,9 +8,20 @@
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: repeat(3, min-content);
 }
-.heading-component {
-  color: var(--col-font-87);
-  font-family: var(--font-primary);
-  letter-spacing: 0.5rem;
+
+.projects-heading-box {
   grid-column: 1 / -1;
+
+  .heading {
+    color: var(--col-font-87);
+    font-family: var(--font-primary);
+    letter-spacing: 0.5rem;
+  }
+  .subheading {
+    font-family: var(--font-secondary);
+    color: var(--col-font-60);
+    font-size: 1.6rem;
+    width: 60%;
+    margin: 1rem 0;
+  }
 }
