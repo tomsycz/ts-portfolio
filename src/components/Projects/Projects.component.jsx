@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { connect } from "react-redux";
 
 import ProjectsContext from "../../context/projects.context";
 import ProjectCard from "./../ProjectCard/ProjectCard.component";

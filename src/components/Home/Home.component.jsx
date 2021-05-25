@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
-import { SiReact } from "react-icons/si";
 import Typical from "react-typical";
 import HomeContext from "../../context/home.context";
 import Profile from "./../../img/profile.png";
 import "./Home.styles.scss";
 
-const Home = () => {
+const Home = React.memo(() => {
   const { hi, name, paragraphs, roles } = useContext(HomeContext);
   return (
     <div className="home">
@@ -31,7 +30,6 @@ const Home = () => {
             loop={1}
           />
         </div>
-        <SiReact className="react-icon" />
         <div className="text-box">
           {paragraphs.map((paragraph, i) => (
             <div key={i}>{paragraph}</div>
@@ -40,6 +38,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Home;

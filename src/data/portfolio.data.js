@@ -11,7 +11,7 @@ export const NAV_LINKS = [
     id: 3,
   },
   {
-    label: "RESUME / contact",
+    label: "cv / contact",
     path: "/cv",
     id: 4,
   },
