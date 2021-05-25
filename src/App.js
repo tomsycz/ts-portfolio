@@ -34,7 +34,13 @@ const App = () => {
   });
 
   const renderNavi = width => {
-    return width > 600 ? <Navi navLinks={NAV_LINKS} /> : <ToggleNaviButton />;
+    return width > 600 ? (
+      <Navi navLinks={NAV_LINKS} />
+    ) : (
+      <div style={{ zIndex: "100" }}>
+        <ToggleNaviButton navLinks={NAV_LINKS} />
+      </div>
+    );
   };
 
   return (

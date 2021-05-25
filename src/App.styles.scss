@@ -127,7 +127,7 @@ a:visited {
   justify-items: center;
 
   font-family: var(--font-secondary);
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 600px) {
     grid-template-rows: min-content min-content 15vh;
   }
 }
@@ -139,6 +139,9 @@ a:visited {
   color: var(--color-primary);
   line-height: 90%;
   text-shadow: var(--heading-1-shdw);
+  @media screen and (max-width: 600px) {
+    font-size: 4.5rem;
+  }
 }
 .heading-2 {
   color: var(--col-font-87);
@@ -147,6 +150,9 @@ a:visited {
   letter-spacing: 0.5rem;
   font-weight: 300;
   text-shadow: var(--heading-2-shdw);
+  @media screen and (max-width: 600px) {
+    font-size: 2rem; // <-setting 1 rem = 10px,
+  }
 }
 
 .particles {

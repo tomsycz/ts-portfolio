@@ -27,7 +27,7 @@ export const HOME_DATA = {
     "I am a morning runner",
   ],
   paragraphs: [
-    "My name is Thomas Syczyk I am a self-thought front-end developer. Solving complex problems with clean and easy to maintain code. Utilising React Ecosystem. Passionate about building user friendly and mobile responsive applications. I strongly believe that hard work pays off, and in my case it always did.",
+    "My name is Thomas Syczyk. I am a self-thought front-end developer. Solving complex problems with clean and easy to maintain code. Utilising React Ecosystem. Passionate about building user friendly and mobile responsive applications. I strongly believe that hard work pays off, and in my case it always did.",
     "Currently learning Typescript and working remotely from Nottingham, UK.",
   ],
 };

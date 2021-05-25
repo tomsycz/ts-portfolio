@@ -1,30 +1,26 @@
-import Link from "../Link";
+import { useContext } from "react";
+import { VscMenu, VscChromeClose } from "react-icons/vsc";
+import Navi from "./Navi.component";
+import { NaviContext } from "./../../providers/navi.provider";
 
 import "./Navi.styles.scss";
 
-const renderNaviItems = links => {
-  return links.map(link => {
-    const { id, path, label } = link;
-    return (
-      <Link
-        key={id}
-        href={path}
-        className={`nav__link ${
-          path === window.location.pathname ? "selected" : ""
-        }`}
-      >
-        {label}
-      </Link>
-    );
-  });
-};
-
 const ToggleNaviButton = ({ navLinks }) => {
+  const { hidden, toggleHidden } = useContext(NaviContext);
   return (
-    <div className="navi">
-      <ul className="nav__list">
-        <button className="nav__link">MENU</button>
-      </ul>
+    <div>
+      {hidden ? null : <Navi navLinks={navLinks} />}
+      <div className="navi">
+        <ul className="nav__list mobile-menu">
+          <div className="nav__link " onClick={() => toggleHidden()}>
+            {hidden ? (
+              <VscMenu className="mobile-menu__icon" />
+            ) : (
+              <VscChromeClose className="mobile-menu__icon" />
+            )}
+          </div>
+        </ul>
+      </div>
     </div>
   );
 };

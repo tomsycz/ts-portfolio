@@ -1,12 +1,14 @@
-import React from "react";
+import { useContext } from "react";
+import { NaviContext } from "./../providers/navi.provider";
 
 const Link = ({ className, href, children }) => {
+  const { toggleHidden } = useContext(NaviContext);
   const handleClick = event => {
     if (event.metaKey || event.ctrlKey) {
       return;
     }
     event.preventDefault();
-
+    toggleHidden();
     window.history.pushState({}, "", href);
     const navEvent = new PopStateEvent("popstate");
 

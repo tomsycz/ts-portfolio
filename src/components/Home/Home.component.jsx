@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Typical from "react-typical";
 import HomeContext from "../../context/home.context";
 import Profile from "./../../img/profile.png";
+
 import "./Home.styles.scss";
 
 const Home = React.memo(() => {
