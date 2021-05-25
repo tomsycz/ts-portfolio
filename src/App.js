@@ -23,13 +23,14 @@ const App = () => {
   const { isDark } = useContext(ModeContext);
   const mode = isDark ? "dark" : "light";
   document.documentElement.setAttribute("data-theme", mode);
+  let fav = document.getElementById("favicon");
+  fav.href = `/favicon-${mode}.ico`;
 
-  // window.addEventListener("resize", setViewportWidth(window.innerWidth));
+  //Display mobile menu button and hide nav
   React.useEffect(() => {
     function handleResize() {
       setViewportWidth(window.innerWidth);
     }
-
     window.addEventListener("resize", handleResize);
   });
 

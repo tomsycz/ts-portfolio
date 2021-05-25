@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Typical from "react-typical";
 import HomeContext from "../../context/home.context";
-import Profile from "./../../img/profile.png";
 
 import "./Home.styles.scss";
 
@@ -9,7 +8,11 @@ const Home = React.memo(() => {
   const { hi, name, paragraphs, roles } = useContext(HomeContext);
   return (
     <div className="home">
-      <img className="profile-picture" src={Profile} alt="Avatar" />
+      <img
+        className="profile-picture"
+        src="https://i.ibb.co/wRrGdYd/profile.png"
+        alt="Avatar"
+      />
       <div className="content-container">
         <div className="heading-container">
           <h2 className="heading-2">{hi}</h2>

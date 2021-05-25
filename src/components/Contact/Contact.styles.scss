@@ -1,14 +1,79 @@
 .contact {
   z-index: 5;
   margin-top: 4.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+    text-align: center;
+    gap: 6rem 0rem;
+  }
+  .cv-box {
+    // grid-column: 2 / 3;
+    width: 70%;
+    position: relative;
+    transition: 1s;
+    // align-self: center;
+    &:hover img {
+      filter: opacity(0.7);
+      transform: scale(1.02);
+    }
+    div {
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      transition: 0.2s;
+      margin-bottom: 1.5rem;
+    }
+    img {
+      box-shadow: var(--cv-shadow);
+      border-radius: 3px;
+      overflow: hidden;
+      filter: var(--cv-filter);
+      width: 100%;
+      transition: 0.2s;
+    }
+  }
 
-  .pdf-box {
-    box-shadow: var(--cv-shadow);
-    border-radius: 5px;
-    overflow: hidden;
-    filter: var(--cv-filter);
-    .pdf-page {
-      // overflow: hidden;
+  .heading {
+    color: var(--col-font-87);
+    font-family: var(--font-primary);
+    letter-spacing: 0.5rem;
+    font-size: 3.6rem;
+    margin-bottom: 6rem;
+    @media screen and (max-width: 600px) {
+      font-size: 3rem;
+    }
+  }
+  .contact-detail {
+    margin: 2rem 0;
+    font-size: 2.1rem;
+    letter-spacing: 0.3rem;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+
+    .name {
+      font-size: 2.8rem;
+      color: var(--col-font-87);
+      @media screen and (max-width: 600px) {
+        font-size: 2.4rem;
+      }
+    }
+    a {
+      color: var(--col-font-60);
+      transition: 1s;
+      font-weight: 200;
+
+      .icon {
+        transform: translateY(3px);
+      }
+      &:hover {
+        color: var(--col-font-87);
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 //Color variables
 
 :root {
-  --color-primary: rgb(170, 209, 253);
+  --color-primary: #aad1fd;
   --color-blue-light: #7dcbff;
 
   --footer-bg: rgba(18, 18, 18, 0.8);
@@ -52,7 +52,8 @@
   --nav-size: 3;
 
   // CV
-  --cv-filter: invert(0) opacity(0.8);
+  --cv-filter: opacity(0.5);
+
   --cv-shadow: -0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.2);
 }
 
@@ -86,7 +87,7 @@
   --heading-2-shdw: -0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.15);
 
   // CV
-  --cv-filter: invert(0) opacity(0.7);
+  --cv-filter: opacity(0.5);
   --cv-shadow: -0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.241);
   --spinner-filter: invert(0);
 }
