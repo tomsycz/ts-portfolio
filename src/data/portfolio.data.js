@@ -76,8 +76,8 @@ export const PROJECTS_DATA = [
     techStack: ["NodeDotJs", "React", "Postgresql", "Javascript"],
 
     apis: ["Clarifai"],
-    repoLink: "/",
-    webLink: "/",
+    repoLink: "https://github.com/tomsycz/FaceRecognition",
+    webLink: "https://face-detection-project-ts.herokuapp.com/",
   },
   {
     id: 0,
