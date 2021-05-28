@@ -18,7 +18,7 @@ const Footer = () => {
         className="social-link"
         target="_blank"
         rel="noreferrer"
-        href="linkedin.com/in/thomas-syczyk-424103159"
+        href="https://linkedin.com/in/thomas-syczyk-424103159"
       >
         <SiLinkedin className="social-icon social-icon__footer" />
       </a>
