@@ -43,6 +43,16 @@
       margin-bottom: 0.5rem;
     }
   }
+  @media screen and (max-width: 530px) {
+    .typical {
+      height: 4rem;
+    }
+  }
+  @media screen and (max-width: 321px) {
+    .typical {
+      height: 6.5rem;
+    }
+  }
 }
 .heading-container {
   transform: translateX(-4rem);

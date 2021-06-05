@@ -19,7 +19,7 @@ const Home = React.memo(() => {
           <h1 className="heading-1">{name}</h1>
           <Typical
             wrapper="h2"
-            className="heading-2"
+            className="heading-2 typical"
             steps={[
               `${roles[0]}`,
               3000,

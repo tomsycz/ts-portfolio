@@ -22,7 +22,7 @@ export const HOME_DATA = {
   name: "Thomas",
   role: "I am a Front-End Developer",
   roles: [
-    "I am a Front-End Developer",
+    "I am a Front‑End Developer",
     "I am a rock climber",
     "I am a morning runner",
   ],
